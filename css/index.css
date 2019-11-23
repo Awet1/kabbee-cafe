@@ -1,0 +1,27 @@
+body{
+    background-image: url('image/kabbee cake.jpg');
+}
+header{
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh; 
+}
+
+.image{
+    margin: 100 px;
+    padding: 10px;
+}
+
+
+.main-nav{
+    float: right;
+    margin-top: 60px;
+}
+
+.main-nav li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 40px;
+}

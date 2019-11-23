@@ -1,0 +1,115 @@
+body{
+    background-image: url('../image/cake.jpg');
+    font-family: 'Flamenco', cursive;
+}
+header li{
+    padding: 30px;
+    float: right;
+    display: inline;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.main-nav li a{
+    text-decoration: none;
+    color: rgb(36, 240, 9);
+    font-size: 20px;
+}
+.main-content h1{
+color: #050505;
+margin: 250px 250px 200px 380px;
+font-size: 40px;
+position: absolute;
+letter-spacing: 3px;
+word-spacing: 5px;
+font-weight: lighter;
+}
+.main-conttent header{
+    width: 1180px;
+    position: absolute;
+    /*border:1px solid red;*/
+    top:55%;
+    left:50%;
+    text-decoration: dodgerblue;
+    font-size: 50px;
+    
+    
+
+
+}
+.btn{
+    display: inline-block;
+    font-weight: lighter;
+    text-decoration: none;
+    border-radius: 200px;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    transition: background-color 0.2s,border 0.2s,color0.2;
+}
+.btn-full{
+    background-color: transparent;
+    color: #e90404;
+    margin-right: 15px;
+    border: 1px solid #bf55ec;
+}
+.btn-full:hover{
+    background-color: #fff;
+}
+.btn-nav{
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+.btn-nav:hover{
+    background-color: #bf55ec;
+}
+.colorchange{
+    animation: colorchangekabbe 1s infinite;
+}
+@keyframes colorchangekabbee{
+     0%{color:red;}
+     25%{color: #bf55ec;}
+     50%{color: white;}
+     100%{ color: #bf55ec;}
+}
+.main-nav{float:bottom;}
+.main-nav li{
+    display: block;
+    margin-top: 10px;
+}
+.btn-full{
+    float: bottom;  
+}
+ .mobile-icon {display: none;}
+/*//////// Responsive queries //////////*/
+@media only screen and (max-width:1180px){
+    .main-content header{
+        width: 100%;
+        padding:0 2%;
+    }
+}
+@media only screen and (max-width:998px){
+    h1{font-size: 200%;}
+}
+@media only screen and (max-width:768px){
+    h1{font-size: 180%;}
+    .main-nav{display:none;}
+    .mobile-icon{
+        display: inline-block;
+        color: #fff;
+        float: right;
+        margin-top: 30px;
+        margin-right: 20px;
+    }
+    .main-nav{float: left;}
+    .main-nav li{
+        float: left;
+        display: block;
+        margin-top: 10px;
+    }
+}
+@media only screen and (max-width:480px){
+    .btn-full{
+        margin-bottom: 20px;
+    }
+    h1{font-size: 160%;}
+}
